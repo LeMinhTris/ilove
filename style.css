@@ -24,7 +24,7 @@ canvas {
    width: 100%;
    height: 100%;
 }
-#pinkboard {
+#animation {
    position: relative;
    margin: auto;
    height: 400px;
@@ -32,8 +32,8 @@ canvas {
    animation: animate 1.3s infinite;
 }
 
-#pinkboard:before,
-#pinkboard:after {
+#animation:before,
+#animation:after {
    content: "";
    position: absolute;
    width: 100px;
@@ -42,20 +42,20 @@ canvas {
    border-top-right-radius: 50px;
 }
 
-#pinkboard:before {
+#animation:before {
    left: 100px;
    transform: rotate(-45deg);
    transform-origin: 0 100%;
    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-#pinkboard:after {
+#animation:after {
    left: 0;
    transform: rotate(45deg);
    transform-origin: 100% 100%;
 }
 
-.center-text {
+.text-content {
    background-color: rgb(0, 0, 0);
    width: 100%;
    color: rgb(255, 0, 102);
@@ -73,10 +73,10 @@ span {
    opacity: 0;
    animation: show_content 2s ease-in-out 1 forwards;
 }
-span:nth-child(2) {
+span:nth-child(1) {
    animation-delay: 1s;
 }
-span:nth-child(3) {
+span:nth-child(2) {
    animation-delay: 2s;
 }
 @keyframes animate {
