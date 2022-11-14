@@ -74,10 +74,12 @@ span {
    animation: show_content 2s ease-in-out 1 forwards;
 }
 span:nth-child(1) {
-   animation-delay: 1s;
+   animation-delay: 2s;
+   animation-iteration-count: infinite;
 }
 span:nth-child(2) {
-   animation-delay: 2s;
+   animation-delay: 4s;
+   animation-iteration-count: infinite;
 }
 @keyframes animate {
    0% {
